@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://mini443.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 00:24:07 +0800</lastBuildDate>
+    
+	<atom:link href="https://mini443.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>php面试高级</title>
+      <link>https://mini443.github.io/post/blog/</link>
+      <pubDate>Thu, 02 Jul 2020 00:24:07 +0800</pubDate>
+      
+      <guid>https://mini443.github.io/post/blog/</guid>
+      <description>五、PHP综合应用 1.写出下列服务的用途和默认端口（新浪网技术部） ftp、ssh、http、telnet、https
+ftp：File Transfer Protocol，文件传输协议，是应用层的协议，它基于传输层，为用户服务，它们负责进行文件的传输，其默认端口是21。 ssh：Secure Shell，安全外壳协议，建立在应用层和传输层基础上的安全协议。SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，其默端口是22。 http：hypertext transport protocol，超文本传送协议，是一种详细规定了浏览器和万维网服务器之间互相通信的规则，通过因特网传送万维网文档的数据传送协议，其默认端口是80。 telnet：Telnet协议是TCP/IP协议族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力，其默认端口是23。 https：Hypertext Transfer Protocol over Secure Socket Layer，是以安全为目标的HTTP通道，用于安全的HTTP数据传输，它的主要作用可以分为两种： 一种是建立一个信息安全通道，来保证数据传输的安全； 另一种就是确认网站的真实性，其默认端口是443。 2.你用什么方法检查PHP脚本的执行效率（通常是脚本执行时间）和数据库SQL的效率（通常是数据库Query时间），并定位和分析脚本执行和数据库查询的瓶颈所在？（腾讯） 脚本执行时间，启用xdebug，使用WinCacheGrind分析。 数据库查询，mysql使用EXPLAIN分析查询，启用slow query log记录慢查询。
+[!!!]3.对于大流量的网站,您采用什么样的方法来解决访问量问题? 确认服务器硬件能否支持当前的流量 对于普通的pc server来说，它能够独立支持每天10万个独立ip访问，如果访问量过大，最好更好性能更高的专用服务器。 优化数据库的访问服务器的负载过大，一个重要的原因就是CPU和内存负载过高，而读写数据在这块占据较多的资源。可以从页面静态化、memcache缓存和mysql优化几个方面着手。 禁止外部盗链 占用较大的流量，防盗链，使用reference来判断一下。如果是图片的话，使用添加水印即可很好的防止。 控制大文件的下载 最好把文件下载的容量控制为相对较小的一个值，如果有大文件下载，最好使用专用的服务器。 使用多台主机实现分流，集群 使用流量分析软件进行分析统计谷歌和百度 4.请简单阐述您最得意的开发之作 根据实际情况自由发挥
+5.谈谈asp,php,jsp的优缺点 ASP全名Active Server Pages，是一个WEB服务器端的开发环境，利用它可以产生和运行动态的、交互的、高性能的WEB服务应用程序。ASP采用脚本语言VB Script作为自己的开发语言。 PHP是一种跨平台的服务器端的嵌入式脚本语言。它大量地借用C、Java和Perl语言的语法，并结合自己的特性，使WEB开发者能够快速地写出动态生成页面。它支持目前绝大多数数据库。还有一点，PHP是完全免费的，不用花钱，你可以从PHP官方站点自由下载。而且你可以不受限制地获得源码，甚至可以从中加进你自己需要的特色。 JSP是Sun公司推出的新一代站点开发语言，他完全解决了目前ASP和PHP的一个通病&amp;mdash;&amp;ndash;脚本级执行（据说PHP4也已经在Zend的支持下，实现编译运行）。Sun公司借助自己在上的不凡造诣，将Java从Java应用程序和Java Applet之外，又有新的硕果，就是Java Server Page。JSP可以在Serverlet和JavaBean的支持下，完成功能强大的站点。 三者都提供在HTML代码中混合某种程序代码、由语言引擎解释执行程序代码的能力。但JSP代码被编译成Servlet并由Java虚拟机解释执行，这种编译操作仅在对JSP页面的第一次请求时发生。 在ASP、PHP、JSP环境下，HTML代码主要负责描述信息的显示样式，而程序代码则用来描述处理逻辑。普通的HTML页面只依赖于Web服务器，而ASP、PHP、JSP页面需要附加的语言引擎分析和执行程序代码。程序代码的执行结果被重新嵌入到HTML代码中，然后一起发送给浏览器。 ASP、PHP、JSP三者都是面向Web服务器的技术，客户端浏览器不需要任何附加的软件支持。
+6.请举例说明在你的开发过程中用什么方法来加快页面的加载速度。 要用到服务器资源时才打开，及时关闭服务器资源，数据库添加索引，页面可生成静态，图片等大文件单独服务器，使用代码优化工具等。
+7.Is PHP better than Perl?–Discuss.（Yahoo） 我们不要为一个简单的问题引发一场舌战，为工作选择适合的语言，不要为工作迁就语言。Perl十分适合用作命令行工具，虽然它在网页应用上也有不错的表现，但是它的真正实力在命令行上才能充分发挥。同样地，PHP虽然可以在控制台的环境中使用，但是它在网页应用上有更好的表现，PHP有大量专门为网页应用而设计的函数，Perl则似乎以命令行为设计之本。
+8.What&amp;rsquo;s the difference between the way PHP and Perl distinguish between arrays and hashes?</description>
+    </item>
+    
+  </channel>
+</rss>
